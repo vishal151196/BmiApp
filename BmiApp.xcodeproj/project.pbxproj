@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DC9492A441C62252EC0BC08 /* Pods_BmiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B249AB5A52CE59C29B3ABB49 /* Pods_BmiApp.framework */; };
+		3F34E5E823A54D84005357F5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5E723A54D84005357F5 /* DetailViewController.swift */; };
+		3F34E5EA23A553AF005357F5 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E5E923A553AF005357F5 /* DataView.swift */; };
 		3F5D73FC23A2BA9900D038EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D73FB23A2BA9900D038EB /* AppDelegate.swift */; };
 		3F5D73FE23A2BA9900D038EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D73FD23A2BA9900D038EB /* SceneDelegate.swift */; };
 		3F5D740023A2BA9900D038EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D73FF23A2BA9900D038EB /* ViewController.swift */; };
 		3F5D740323A2BA9900D038EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5D740123A2BA9900D038EB /* Main.storyboard */; };
 		3F5D740523A2BA9A00D038EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5D740423A2BA9A00D038EB /* Assets.xcassets */; };
 		3F5D740823A2BA9A00D038EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5D740623A2BA9A00D038EB /* LaunchScreen.storyboard */; };
+		3F5D741023A2BCEF00D038EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F5D740F23A2BCEF00D038EB /* GoogleService-Info.plist */; };
+		3F5D741423A2F61500D038EB /* BmiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D741323A2F61500D038EB /* BmiModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F34E5E723A54D84005357F5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3F34E5E923A553AF005357F5 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		3F5D73F823A2BA9900D038EB /* BmiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BmiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5D73FB23A2BA9900D038EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5D73FD23A2BA9900D038EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		3F5D740423A2BA9A00D038EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F5D740723A2BA9A00D038EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F5D740923A2BA9A00D038EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5D740F23A2BCEF00D038EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F5D741323A2F61500D038EB /* BmiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiModel.swift; sourceTree = "<group>"; };
+		43BDDE2F7B36F987D2B254D3 /* Pods-BmiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BmiApp.debug.xcconfig"; path = "Target Support Files/Pods-BmiApp/Pods-BmiApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B249AB5A52CE59C29B3ABB49 /* Pods_BmiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BmiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04CB54FD96D13FF583D33D6 /* Pods-BmiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BmiApp.release.xcconfig"; path = "Target Support Files/Pods-BmiApp/Pods-BmiApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC9492A441C62252EC0BC08 /* Pods_BmiApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3715AFE809FA9007BE103A78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B249AB5A52CE59C29B3ABB49 /* Pods_BmiApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F5D73EF23A2BA9900D038EB = {
 			isa = PBXGroup;
 			children = (
 				3F5D73FA23A2BA9900D038EB /* BmiApp */,
 				3F5D73F923A2BA9900D038EB /* Products */,
+				6DFE2A60FF05C88650DAA9C7 /* Pods */,
+				3715AFE809FA9007BE103A78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +82,25 @@
 				3F5D73FB23A2BA9900D038EB /* AppDelegate.swift */,
 				3F5D73FD23A2BA9900D038EB /* SceneDelegate.swift */,
 				3F5D73FF23A2BA9900D038EB /* ViewController.swift */,
+				3F34E5E723A54D84005357F5 /* DetailViewController.swift */,
 				3F5D740123A2BA9900D038EB /* Main.storyboard */,
+				3F5D741323A2F61500D038EB /* BmiModel.swift */,
+				3F34E5E923A553AF005357F5 /* DataView.swift */,
 				3F5D740423A2BA9A00D038EB /* Assets.xcassets */,
 				3F5D740623A2BA9A00D038EB /* LaunchScreen.storyboard */,
+				3F5D740F23A2BCEF00D038EB /* GoogleService-Info.plist */,
 				3F5D740923A2BA9A00D038EB /* Info.plist */,
 			);
 			path = BmiApp;
+			sourceTree = "<group>";
+		};
+		6DFE2A60FF05C88650DAA9C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43BDDE2F7B36F987D2B254D3 /* Pods-BmiApp.debug.xcconfig */,
+				C04CB54FD96D13FF583D33D6 /* Pods-BmiApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F5D740C23A2BA9A00D038EB /* Build configuration list for PBXNativeTarget "BmiApp" */;
 			buildPhases = (
+				D1F59E37B502001E1DF272E2 /* [CP] Check Pods Manifest.lock */,
 				3F5D73F423A2BA9900D038EB /* Sources */,
 				3F5D73F523A2BA9900D038EB /* Frameworks */,
 				3F5D73F623A2BA9900D038EB /* Resources */,
+				8A32D62AEF611C69493C3A12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F5D740823A2BA9A00D038EB /* LaunchScreen.storyboard in Resources */,
+				3F5D741023A2BCEF00D038EB /* GoogleService-Info.plist in Resources */,
 				3F5D740523A2BA9A00D038EB /* Assets.xcassets in Resources */,
 				3F5D740323A2BA9900D038EB /* Main.storyboard in Resources */,
 			);
@@ -133,12 +172,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A32D62AEF611C69493C3A12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BmiApp/Pods-BmiApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BmiApp/Pods-BmiApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BmiApp/Pods-BmiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F59E37B502001E1DF272E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BmiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F5D73F423A2BA9900D038EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F34E5EA23A553AF005357F5 /* DataView.swift in Sources */,
+				3F5D741423A2F61500D038EB /* BmiModel.swift in Sources */,
 				3F5D740023A2BA9900D038EB /* ViewController.swift in Sources */,
+				3F34E5E823A54D84005357F5 /* DetailViewController.swift in Sources */,
 				3F5D73FC23A2BA9900D038EB /* AppDelegate.swift in Sources */,
 				3F5D73FE23A2BA9900D038EB /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +366,7 @@
 		};
 		3F5D740D23A2BA9A00D038EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43BDDE2F7B36F987D2B254D3 /* Pods-BmiApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +384,7 @@
 		};
 		3F5D740E23A2BA9A00D038EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C04CB54FD96D13FF583D33D6 /* Pods-BmiApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
