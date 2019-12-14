@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var bmiLabel: UILabel!
     @IBOutlet weak var bmi_criteria_msg: UILabel!
     
+    // function to reset values entered by user in the form
     @IBAction func ResetFunc(_ sender: UIButton) {
         uName.text = ""
         uGender.text = ""
@@ -30,12 +31,14 @@ class ViewController: UIViewController {
         uHeight.text = ""
         uWeight.text = ""
     }
+    //function to calculate bmi value for given data by user
     @IBAction func bmiCalculator(_ sender: UIButton){
         user_weight = Double(uWeight.text!)!
         user_height = Double(uHeight.text!)!
-        //let Bmi = w!/((h!/100)*(h!/100))
+        
         user_bmi = (user_weight*703)/(user_height*user_height)
         
+        //deciding condition for bmi category based on bmi value
         if(user_bmi < 16)
         {
             bmi_criteria_msg.text = String("Severe Thinness")
@@ -68,7 +71,7 @@ class ViewController: UIViewController {
         {
             bmi_criteria_msg.text = String("Obese class 3")
         }
-        
+        //formatting calculated value to two digit after decimal point
         bmiLabel.text = String(format: "%.2f", user_bmi)
         
         if(uName.text != "" || uGender.text != "" || uAge.text != "" || uHeight.text != "" || uWeight.text != ""){
@@ -91,11 +94,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-//        reference_to_data = Database.database().reference().child("bmi")
-        
-//        ref.observeSingleEvent(of: .value, with: { (snapshot) in
-//            if snapshot.hasChild("bmi"){
-                //self.setValues()
-            }
+        reference_to_data = Database.database().reference().child("bmi")
+        }
 }
 

@@ -38,8 +38,8 @@ class DetailViewController: UIViewController ,UITableViewDelegate,UITableViewDat
         dataTableView.delegate = self
         dataTableView.dataSource = self
         
-        //calling load function for fetching and storing data from firebase
-        load()
+        
+        load()  //calling load function for fetching and storing data from firebase
     }
     func numberOfSections(in tableView: UITableView) -> Int {
       return 1
@@ -47,11 +47,11 @@ class DetailViewController: UIViewController ,UITableViewDelegate,UITableViewDat
     
     func load(){
    
-        //storing reference of firebase database using key: bmi
-//        refData = Database.database().reference().child("bmi")
-    refData = Database.database().reference(withPath: "bmi")
-        //this method will be called whenever there is change in Firebase Database
-        refData.observe(DataEventType.value, with: {(snapshot) in
+        
+        refData = Database.database().reference(withPath: "bmi")    //storing reference of firebase database using key: bmi
+        
+        
+        refData.observe(DataEventType.value, with: {(snapshot) in   //this method will be called whenever there is change in Firebase Database
             
             if snapshot.childrenCount>0{
                 self.DataList.removeAll()
@@ -68,11 +68,12 @@ class DetailViewController: UIViewController ,UITableViewDelegate,UITableViewDat
                     
                     let bmiData = BmiModel(name:Dname as! String?,age: Dage as! String?,gender:Dgender as! String?,height:Dheight as! String?,weight:Dweight as! String?,bmi:Dbmi_value as! String?)
                     
-                    self.DataList.append(bmiData)
+                    
+                    self.DataList.append(bmiData)   //binding data to datalist array
                     
                 }
-            
-                self.dataTableView.reloadData()
+                
+                self.dataTableView.reloadData() //reload data in table view
             }
             
             })
